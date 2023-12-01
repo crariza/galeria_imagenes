@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Galeria de Imagenes</title>
+</head>
+<body>
+    <h1>
+        Galeria de animalitos
+    </h1>
+    <header class="dropdown">
+        <div class="options-container">
+            <button class="dropButton">Mostrar</button>
+            <!-- <i class='bx bx-home-alt' id="home" onclick="mostrarImagenes('thumbnail')"></i> -->
+        </div>
+        <div class="dropdown-content">
+            <a href="#" onclick="filtrarImagenes('gatos')">Gatos</a>
+            <a href="#" onclick="filtrarImagenes('perros')">Perros</a>
+            <a href="#" onclick="filtrarImagenes('aves')">Aves</a>
+            <a href="#" onclick="filtrarImagenes('thumbnail')">Todos</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="galeria">
+
+            <figure>
+                <img src="https://images.pexels.com/photos/3777622/pexels-photo-3777622.jpeg" alt="gato1" class="thumbnail gatos">
+                <figcaption>Los gatos son makia</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="https://images.pexels.com/photos/17923079/pexels-photo-17923079/free-photo-of-sea-landscape-sunset-beach.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="gato 2" class="thumbnail perros">
+                <figcaption>Los perros son makia</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://images.pexels.com/photos/3777622/pexels-photo-3777622.jpeg" alt="gato1" class="thumbnail gatos">
+                <figcaption>Los gatos son makia</figcaption>
+            </figure>
+                
+            <figure>
+                <img src="https://images.pexels.com/photos/5745354/pexels-photo-5745354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="gato3" class="thumbnail aves">
+                <figcaption>Las aves son makia</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="https://images.pexels.com/photos/2607544/pexels-photo-2607544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="gato3" class="thumbnail perros">
+                <figcaption>Los perros son makia vol.2</figcaption>
+            </figure>
+    
+            <figure>
+                <img src="https://images.pexels.com/photos/1404819/pexels-photo-1404819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="gato3" class="thumbnail gatos">
+                <figcaption>Los gatos son makia vol.2</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://images.pexels.com/photos/1404819/pexels-photo-1404819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="gato3" class="thumbnail gatos">
+                <figcaption>Los gatos son makia vol.2</figcaption>
+            </figure>
+    
+            <figure>
+                <img src="https://images.pexels.com/photos/7099311/pexels-photo-7099311.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="gato3" class="thumbnail aves">
+                <figcaption>Las aves son makia vol.2</figcaption>
+            </figure>
+            
+        </div>
+    </main>
+
+    <div class="lightbox">
+        <span class="close">&times;</span>
+        <div class="card">
+            <i class='bx bx-arrow-back' style ="color: white;" id="left"></i>
+            <div class="side front-face">
+                <img class="lightbox-image" src="" alt="imagen-ampliada">
+            </div>
+            <div class="side back-face">
+                
+            </div>
+            <i class='bx bx-right-arrow-alt' style ="color: white;" id="right"></i>
+        </div>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>
