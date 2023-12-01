@@ -21,7 +21,6 @@ body {
     margin: 0 auto;
 }
 
-
 .dropButton {
     background-color: rgb(151, 210, 230);
     color: white;
@@ -175,8 +174,6 @@ figcaption {
 #left:hover, #right:hover  {
     background-color: gray;
 }
-
-
 
 #left {
     left: -20%;
